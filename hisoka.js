@@ -301,7 +301,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Botkingdom',
-                                    url: 'https://chat.whatsapp.com/JOsgpUY2SFTBfG0fhAsV7v'
+                                    url: 'https://chat.whatsapp.com/CIDWlH7yzEsKombRDcTKcV'
                                 }
                             }, {
                                 callButton: {
@@ -315,8 +315,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
+                                    displayText: 'hi',
+                                    id: 'sc'
                                 }  
                             }, {
                                 quickReplyButton: {
