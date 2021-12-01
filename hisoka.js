@@ -216,7 +216,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                     + 'N:;Dika Ardnt.;;;'
                     + 'FN:Dika Ardnt.\n' // full name
                     + 'ORG:Owner Bot;\n' // the organization of the contact
-                    + 'TEL;type=CELL;type=VOICE;waid=6288292024190:+62 882-9202-4190\n' // WhatsApp ID + phone number
+                    + 'TEL;type=CELL;type=VOICE;waid=6288:+62 882-9202-\n' // WhatsApp ID + phone number
                     + 'END:VCARD'
                 hisoka.sendMessage(m.chat, { contacts: { displayName: 'Dika Ardnt.', contacts: [{ vcard }] } }, { quoted: m })
             }
