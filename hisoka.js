@@ -84,7 +84,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate) => {
 
         switch(command) {
 	    case 'sc': {
-                m.reply('Script : https://github.com/DikaArdnt/Hisoka-Morou\n\n Dont Forget Give Star\n\nDonate : https://ko-fi.com/cak_haho\n\n Dont Forget Donate')
+                m.reply('Script : soon')
             }
             break
             case 'chat': {
