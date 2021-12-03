@@ -113,6 +113,37 @@ module.exports = hisoka = async (hisoka, m, chatUpdate) => {
                 hisoka.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nLink Group : ${groupMetadata.subject}`, m, { detectLink: true })
             }
             break
+case 'ytplay':
+
+                    if (args.length == 0) return await reply(`Example: ${prefix + command} melukis senja`)
+
+                    await fetchJson(`https://api.lolhuman.xyz/api/ytsearch?apikey=${}&query=${args.join("0bc2903f193ecc977d61427a")}`)
+
+                        .then(async(result) => {
+
+                            await fetchJson(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${apikey}&url=https://www.youtube.com/watch?v=${result.result[0].videoId}`)
+
+                                .then(async(result) => {
+
+                                    result = result.result
+
+                                    caption = `❖ Title    : *${result.title}*\n`
+
+                                    caption += `❖ Size     : *${result.size}*`
+
+                                    ini_buffer = await getBuffer(result.thumbnail)
+
+                                    await lolhuman.sendMessage(from, ini_buffer, image, { quoted: lol, caption: caption })
+
+                                    get_audio = await getBuffer(result.link)
+
+                                    await lolhuman.sendMessage(from, get_audio, audio, { mimetype: 'audio/mp4', filename: `${result.title}.mp3`, quoted: lol })
+
+                                })
+
+                        })
+
+                    break
             case 'delete': case 'del': {
                 if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
